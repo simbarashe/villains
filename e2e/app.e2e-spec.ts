@@ -9,6 +9,6 @@ describe('villains App', function() {
 
   it('should display message saying app works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('vil works!');
+    expect(page.getParagraphText()).toEqual('Villains unite!');
   });
 });
