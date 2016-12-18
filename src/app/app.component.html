@@ -1,16 +1,9 @@
-<h1>
-  {{title}}
-</h1>
-
-<ul class="thisVillain">
-  <li *ngFor="let thisVillain of villains"
-    (click)="onSelect(thisVillain)"
-    [class.selected]="thisVillain === villain">
-
-    {{thisVillain.alias}}
-    <span class="power">({{thisVillain.power}})</span>
-
+<ul>
+  <li>
+    <a routerLink="villains">Villains</a>
+  </li>
+  <li>
+    <a routerLink="powers">Powers</a>
   </li>
 </ul>
-
-<vil-villain-edit [villain]="villain"></vil-villain-edit>
+<router-outlet></router-outlet>
